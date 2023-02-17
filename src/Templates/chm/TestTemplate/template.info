@@ -1,0 +1,7 @@
+[config]
+name=TestTemplate
+extension=chm
+inherits=
+linkformattopic=%helpid%.htm
+linkformatanchor=%helpid%.htm#%anchorname%
+

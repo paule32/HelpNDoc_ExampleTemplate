@@ -1,0 +1,21 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Display compile progress=Yes
+Full-text search=Yes
+Default Font=Arial,10,0
+Error log file=E:\Projekte\Temp\output\project.log
+Contents file=E:\Projekte\Temp\output\toc.hhc
+Index file=E:\Projekte\Temp\output\index.hhk
+Compiled file=E:\Projekte\Temp\index.chm
+Default topic=Einfuhrung.htm
+Language=0x0407
+Title=FPC + Lazarus Hilfe
+
+[WINDOWS]
+Main="FPC + Lazarus Hilfe","E:\Projekte\Temp\output\toc.hhc","E:\Projekte\Temp\output\index.hhk","Einfuhrung.htm","Einfuhrung.htm","","","","",0x61520,200,0x304E,[-1,-1,-1,-1],0xB0000,,,0,0,0,0
+
+[FILES]
+einfuhrung.htm
+grundlagen1.htm
+vorlage_toc.htm
+

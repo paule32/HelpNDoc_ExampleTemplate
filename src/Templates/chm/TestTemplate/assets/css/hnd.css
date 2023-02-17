@@ -1,0 +1,47 @@
+body {
+background-color:rgb(200,132,5);
+}
+.template_body {
+background-color:rgba(0,0,15,0.1);
+margin-right:10px;
+padding-left:10px;
+padding-top:10px;
+padding-right:10px;
+height:50vh;
+}
+.template_toc {
+background-color:rgba(0,0,255,0.1);
+padding-left:10px;
+padding-top:10px;
+height:50vh;
+}
+.rvts6 {
+text-align:center;
+color: black;
+}
+
+.footer_text {
+text-align:center;
+height:32px;
+width:100%;
+font-size: 10pt;
+font-family: 'Arial';
+color: white;
+background-color:blue;
+}
+
+.bg_pic {
+margin:auto;
+width:100%;
+height:56px;
+background-image:url(../images/bg.png);
+}
+.header_middle {
+width:94%;
+font-size:18pt;
+font-weight:bold;
+font-family: "Arial";
+color:yellow;
+text-align:center;
+}
+
