@@ -10,10 +10,6 @@ padding-right:10px;
 height:50vh;
 }
 .template_toc {
-background-color:rgba(0,0,255,0.1);
-padding-left:10px;
-padding-top:10px;
-height:50vh;
 }
 .rvts6 {
 text-align:center;
@@ -45,3 +41,87 @@ color:yellow;
 text-align:center;
 }
 
+.treeHND {
+font-size:10pt;
+font-weight:notmal;
+font-family: "Arial";
+background-color:rgba(0,0,155,0.1);
+height:50vh;
+padding-top: 10px;
+  --spacing : 1.0rem;
+  --radius  : 5px;
+}
+
+.treeHND li{
+  display      : block;
+  position     : relative;
+  padding-left : calc(2 * var(--spacing) - var(--radius) - 12px);
+}
+
+.treeHND ul{
+  margin-left  : calc(var(--radius) + var(--spacing));
+  padding-left : 0;
+}
+
+.treeHND ul li{
+  border-left : 2px solid #ddd;
+}
+
+.treeHND ul li:last-child{
+  border-color : transparent;
+}
+
+.treeHND ul li::before{
+  content      : '';
+  display      : block;
+  position     : absolute;
+  top          : calc(var(--spacing) / -2);
+  left         : 0px;
+  width        : calc(var(--spacing) + 2px);
+  height       : calc(var(--spacing) + 1px);
+  border       : solid #fff;
+  border-width : 0px;
+}
+
+.treeHND summary{
+  display : block;
+  cursor  : pointer;
+}
+
+.treeHND summary::marker,
+  display : none;
+}
+
+.treeHND summary:focus{
+  outline : none;
+}
+
+.treeHND summary:focus-visible{
+  outline : 1px dotted #000;
+}
+
+.treeHND li::after,
+.tree summary::before{
+  content       : '';
+  display       : block;
+  position      : absolute;
+  top           : calc(var(--spacing) / 2 - var(--radius));
+  left          : 0px;
+  width         : calc(2 * var(--radius));
+  height        : calc(2 * var(--radius));
+  border-radius : 50%;
+  background    : red; /*#ddd;*/
+}
+
+.treeHND summary::before{
+  content     : '';
+  z-index     : 1;
+  background  : #696;
+  color       : #fff;
+  line-height : calc(2 * var(--radius) - 2px);
+  text-align  : center;
+}
+
+.treeHND details[open] > summary::before{
+  content : '';
+}
